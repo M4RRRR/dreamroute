@@ -1,74 +1,86 @@
-body {
-  font-family: Arial, sans-serif;
-  background-image: url('backround.jpg'); /* Ganti 'background.jpg' dengan URL atau nama gambar latar belakang Anda */
-  background-repeat: no-repeat;
-  background-size: cover;
+/* Reset styling */
+body, h1, h2, p, img {
   margin: 0;
   padding: 0;
-  background-color: rgba(242, 242, 242, 0.8); /* Warna latar belakang halaman dengan opacity 0.8 */
 }
 
+/* Body styling */
+body {
+  font-family: 'Arial', sans-serif;
+  background-image: url('backround.jpg'); /* Ganti 'background.jpg' dengan nama file gambar yang sesuai */
+  background-size: cover;
+  color: #fff; /* Warna teks */
+}
+
+/* Header styling */
 header {
-  background-color: rgba(51, 51, 51, 0.8); /* Warna latar belakang header dengan opacity 0.8 */
-  color: #fff;
-  text-align: center;
-  padding: 1em;
-}
-
-section {
-  margin: 20px;
-}
-section p {
-  border: 2px solid #333;
-  padding: 10px;
-  border-radius: 8px;
-  background-color: rgba(255, 255, 255, 0.8); /* Warna latar belakang elemen p dengan opacity 0.8 */
-}
-
-.team-member {
-  background-color: rgba(255, 255, 255, 0.8); /* Warna latar belakang elemen team-member dengan opacity 0.8 */
+  background-color: #333; /* Warna latar header */
   padding: 20px;
-  border-radius: 8px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-  margin-bottom: 20px;
-}
-
-.team-member img {
-  width: 100%;
-  max-width: 200px;
-  border-radius: 50%;
-  margin-bottom: 10px;
-}
-
-.team-member h2 {
-  color: #333;
-  font-size: 1.5em;
-  margin-bottom: 10px;
-}
-
-.team-member p {
-  margin-bottom: 8px;
-}
-
-/* Add more styling as needed */
-
-/* Footer */
-footer {
   text-align: center;
-  padding: 10px;
-  background-color: rgba(51, 51, 51, 0.8); /* Warna latar belakang footer dengan opacity 0.8 */
-  color: #fff;
-  position: fixed;
-  bottom: 0;
-  width: 100%;
-}
-h1 a {
-  color: #fff;
-  text-decoration: none; /* Remove underline */
-  transition: color 0.3s ease, opacity 0.3s ease;
 }
 
-h1 a:hover {
-  color: #fff;
-  opacity: 0.8;
+header h1 a {
+  color: #fff; /* Warna teks header */
+  text-decoration: none;
+}
+
+/* Section styling */
+section {
+  display: flex; /* Menggunakan flexbox untuk membuat gambar berbaris */
+  justify-content: space-around; /* Mengatur ruang antara gambar */
+  align-items: center; /* Mengatur gambar ke tengah vertikal */
+  padding: 20px;
+}
+
+/* Informasi Anggota Tim styling */
+.person-info {
+  text-align: center; /* Posisi teks ke tengah */
+  margin: 15px; /* Jarak antara blok informasi anggota tim */
+  background-color: rgba(255, 255, 255, 0.9); /* Latar belakang putih semi-transparan */
+  padding: 15px; /* Ruang di dalam blok informasi */
+  border-radius: 10px; /* Sudut melengkung */
+}
+
+img {
+  width: 150px; /* Lebar gambar anggota tim */
+  height: 150px; /* Tinggi gambar anggota tim */
+  border-radius: 50%; /* Membuat gambar menjadi lingkaran */
+  margin-bottom: 10px;
+}
+
+h2 {
+  color: #333; /* Warna judul anggota tim */
+  margin-bottom: 5px; /* Jarak antara judul dan informasi lainnya */
+}
+
+p {
+  color: #555; /* Warna teks informasi anggota tim */
+  margin-bottom: 3px; /* Jarak antara informasi */
+}
+
+img {
+  width: 150px; /* Lebar gambar anggota tim */
+  height: 150px; /* Tinggi gambar anggota tim */
+  border-radius: 50%; /* Membuat gambar menjadi lingkaran */
+  margin-bottom: 10px;
+}
+
+h2 {
+  color: #333; /* Warna judul anggota tim */
+  margin-bottom: 5px; /* Jarak antara judul dan informasi lainnya */
+}
+
+p {
+  color: #555; /* Warna teks informasi anggota tim */
+  margin-bottom: 3px; /* Jarak antara informasi */
+}
+
+/* Kalimat Tambahan styling */
+.additional-info {
+  text-align: center;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.8); /* Latar belakang semi-transparan */
+  margin: 20px;
+  border-radius: 10px;
+  color: #333; /* Warna teks kalimat tambahan */
 }
